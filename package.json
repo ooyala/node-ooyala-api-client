@@ -1,7 +1,7 @@
 {
   "name": "node-ooyala-api-client",
   "preferGlobal": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Ooyala <x-device-team@ooyala.com>",
   "description": "Ooyala API Client",
   "contributors": [

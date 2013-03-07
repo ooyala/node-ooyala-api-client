@@ -1,6 +1,5 @@
 NODE JS wrapper for OoyalaAPI client API (v2 fashion API with sha256 signing)
 
-Only implement get and post api wrapper for now.
 
 Usage:
 
