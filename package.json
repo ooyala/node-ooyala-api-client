@@ -1,13 +1,13 @@
 {
   "name": "node-ooyala-api-client",
   "preferGlobal": false,
-  "version": "0.0.6",
-  "author": "Ooyala <x-device-team@ooyala.com>",
+  "version": "2.0.0",
+  "author": "Nick Collins",
   "description": "Ooyala API Client",
   "contributors": [
     {
-      "name": "Rui Yang",
-      "email": "rui@ooyala.com"
+      "name": "Nick Collins",
+      "email": "ndcollins@nc-design.net"
     }
   ],
   "scripts": {
@@ -17,15 +17,16 @@
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/ooyala/node-ooyala-api-client"
+    "url": "https://bitbucket.org:ndcollins/node-ooyala-api-client"
   },
 
   "keywords": [
   ],
 
   "dependencies": {
-    "underscore": "*",
-    "coffee-script" :  "1.2.0",
+    "lodash": "^3.2.0",
+    "q": "^1.1.2",
+    "superagent": "^0.21.0"
     "crypto" : "*"
   },
 
