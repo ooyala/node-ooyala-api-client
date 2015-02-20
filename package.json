@@ -27,7 +27,7 @@
     "lodash": "^3.2.0",
     "q": "^1.1.2",
     "superagent": "^0.21.0"
-    "crypto" : "*"
+    "crypto": "*"
   },
 
   "noAnalyze": true,
