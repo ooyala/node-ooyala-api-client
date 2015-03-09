@@ -1,7 +1,7 @@
 {
   "name": "node-ooyala-api-client",
   "preferGlobal": false,
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Nick Collins",
   "description": "Ooyala API Client",
   "contributors": [
