@@ -9,24 +9,16 @@ var OoyalaApi = require("node-ooyala-api-client");
 
 var apiKey = "foo";
 var apiSecret = "foo secret";
-var hostName = "localhost";
-var hostPort = 3101;
+var client = new OoyalaApi( apiKey, apiSecret );
 
-var client = new OoyalaApi(apiKey, apiSecret, hostName, hostPort);
-
-var headers = null;
 var apiPath = "/test"
 var queryStringParams = { foo: 1 };
-var callbacksContext = {
- statusCallback : function(statusCode, responseHeader) { console.log(statusCode, responseHeader); },
- dataCallback : function(data) { console.log("Body is", data); },
- errorCallback : function(error) { console.log(error); }
-}
-client.get(headers, apiPath, queryStringParams, callbacksContext.statusCallback,
-     callbacksContext.dataCallback, callbacksContext.errorCallback, callbacksContext);
+client.get( apiPath, queryStringParam ).then( function( data ) {
+ console.log( data );
+});
 
 var body = "hello world";
-
-client.post(headers, apiPath, queryStringParams, body, callbacksContext.statusCallback,
-     callbacksContext.dataCallback, callbacksContext.errorCallback, callbacksContext);
+client.post( apiPath, queryStringParams, body ).then( function( data ) {
+ console.log( data );
+});
 
